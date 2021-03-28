@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>8206745a-45cd-4a37-ab9a-060cbaa4ad64</Guid>
+    <Name>WOTC_StartWithHeroWeapons</Name>
+    <Description>SOME mod added classes use the hero weapons and come equipped with a hero weapon but have options for others. The issue is if you equip them with something else they won't be able to re-equip their hero weapon until you contact that faction.
+
+This mod changes that.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WOTC_StartWithHeroWeapons</AssemblyName>
+    <RootNamespace>WOTC_StartWithHeroWeapons</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WOTC_StartWithHeroWeapons\" />
+    <Folder Include="Src\WOTC_StartWithHeroWeapons\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Src\WOTC_StartWithHeroWeapons\Classes\X2DownloadableContentInfo_WOTC_StartWithHeroWeapons.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
